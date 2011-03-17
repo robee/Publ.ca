@@ -1,0 +1,100 @@
+input, label, p, h1, h2, h3 {
+font-family: adobe-garamond-pro-1. Georgia, serif;
+font-style: normal;
+font-weight: 400;
+font-size:135%;
+line-height: normal;
+
+}
+
+a{
+    font-style:none;
+    text-decoration:none;
+    color:black;
+    font-color:black;
+}
+
+h1{
+    text-align:center;
+    font-size:70px;
+}
+
+.title{
+    font-size:55px;
+}
+
+hr{
+    border:0px;
+    color:black;
+    background-color:black;
+    height:2px;
+}
+
+div.ornament {
+background-image: url(http://www2.mcsweeneys.net/images/ornamentDivider.png);
+background-position: 50% 50%;
+background-repeat: no-repeat;
+float: left;
+height: 11px;
+margin-bottom: 20px;
+margin-top: 10px;
+width: 100%;
+}
+
+h3{
+    text-align:center;
+    font-style:italic;
+}
+
+.invisible{
+     margin:-20px;
+     filter:alpha(opacity=10);
+    -moz-opacity:0.1;
+    -khtml-opacity: 0.1;
+    opacity: 0.1;
+}
+
+.text{
+   
+    height:400px;
+    font-size:18px;
+    word-wrap: break-word;
+    word-spacing:3px;
+    letter-spacing:1px;
+    line-height:25px;
+}
+
+textarea{
+    border:1px solid #CECECE;
+	background-color: #FAFAFA;
+    height:400px;
+    width: 400px;
+}
+
+.input{
+    font:adobe-garamond-pro-1;
+    font-size:20px;
+    height:25px;
+    width:40%;
+    border:1px solid #CECECE;
+	background-color: #FAFAFA;
+}
+
+.container {
+    margin-top:50px;
+    margin-left: auto;
+	margin-right: auto;
+    width: 600px;
+}
+
+
+p{
+    width:100%;
+}
+.form{
+    text-align:center;
+}
+.right{
+    text-align:right;
+}
+
