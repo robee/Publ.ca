@@ -23,6 +23,7 @@ h1{
     font-size:55px;
 }
 
+
 hr{
     border:0px;
     color:black;
@@ -47,7 +48,7 @@ h3{
 }
 
 .invisible{
-     margin:-20px;
+     margin:-18px;
      filter:alpha(opacity=10);
     -moz-opacity:0.1;
     -khtml-opacity: 0.1;
@@ -87,6 +88,13 @@ textarea{
     width: 600px;
 }
 
+.landingcontainer{
+    margin-top:40px;
+    margin-left: auto;
+	margin-right: auto;
+    width: 400px;
+}
+
 
 p{
     width:100%;
@@ -98,3 +106,12 @@ p{
     text-align:right;
 }
 
+.getstarted{
+    color:#CECECE;
+    font-size:40px;
+}
+
+.getstarted:hover{
+    color:#000;
+}
+}
