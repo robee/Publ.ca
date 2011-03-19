@@ -17,15 +17,9 @@ class Pub(db.Model):
     
     
     @staticmethod
-    def create_pub(title_arg, author_arg, content_arg, twitter_user_arg=None, bitly_user_arg=None):
+    def create_pub(title_arg, author_arg, content_arg):
         
         newPub = Pub(pub_id= getUniqueId(), title=title_arg, content=content_arg, author=author_arg)
-        
-        if twitter_user_arg:
-            newPub.twitter_user = twitter_user_arg
-        
-        if bitly_user_arg:
-            newPub.bitly_user = bitly_user_arg
             
         newPub.put()
         return newPub
@@ -38,10 +32,6 @@ class Pub(db.Model):
     @staticmethod
     def get_by_title(title):
         return Pub.all().filter('title = ', title).get()
-
-    @staticmethod
-    def get_by_twitter(twitter_user):
-        return Pub.all().filter('twitter_user = ', twitter_user).get()
 
     @staticmethod
     def get_by_author(author):

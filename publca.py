@@ -87,7 +87,7 @@ class CreateHandler(webapp.RequestHandler):
         author = self.request.get('author_form')
         content = self.request.get('content_form')
         email = self.request.get('email_form')
-        pages = self.request.get('pages')
+        
         
         if title == '':
             title = 'Untitled'
@@ -98,9 +98,10 @@ class CreateHandler(webapp.RequestHandler):
         if content == '':
             content = 'Nothing To Say'
         
-       
-        
         content = "<br/>".join(content.split("\n"))
+        new_pub = Pub.create_pub(title, author, content)
+        
+        
         if email:
             mail.send_mail(sender="Publca <mr.rossrobinson@gmail.com>",
                       to=email,
